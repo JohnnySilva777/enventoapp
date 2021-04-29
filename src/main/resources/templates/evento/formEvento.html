@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="materialize/css/materialize.min.css" media="screen,projection" />
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eventos App</title>
+</head>
+<body>
+	<h1>Cadastro de Eventos:</h1>
+	<form method="post" class="container">
+		<div class="row">
+			<div class="input-field col s6">
+				<label for="nome">Nome</label> 
+				<input type="text" value="" name="nome">
+			</div>
+			<div class="input-field col s6">
+				<label for="local">Local</label> 
+				<input type="text" value="" name="local"> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<label for="data">Data</label> 
+				<input type="date" value="" name="data"> 
+			</div>
+			
+			<div class="input-field col s6">
+				<label for="horario">Horario</label>
+				<input type="text" value="" name="horario">
+			</div>
+		</div>
+		<button class="waves-effect waves-light btn" type="submit">Salvar</button>
+		<a href="/" class="waves-effect waves-light btn"><i
+			class="material-icons left">send</i>Listagem</a>
+	</form>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
